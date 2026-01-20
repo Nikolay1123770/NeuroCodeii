@@ -6,7 +6,7 @@ const path = require('path');
 // ═══════════════════════════════════════════════════════════
 // КОНФИГУРАЦИЯ
 // ═══════════════════════════════════════════════════════════
-const BOT_TOKEN = process.env.BOT_TOKEN || 'YOUR_BOT_TOKEN_HERE';
+const BOT_TOKEN = process.env.BOT_TOKEN || '8495248952:AAE1XVNscAT7r9HfYHDebTq-4cK-lqKKBMc';
 const PORT = process.env.PORT || 3000;
 const DOMAIN = 'https://neurocodeai.bothost.ru';
 const WEBHOOK_PATH = `/webhook/${BOT_TOKEN}`;
