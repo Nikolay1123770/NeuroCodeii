@@ -14,454 +14,184 @@ const BOT_USERNAME = 'NeuroCodeAI_bot';
 // ═══════════════════════════════════════════════════════════
 // API КЛЮЧИ
 // ═══════════════════════════════════════════════════════════
-const GROQ_API_KEY = process.env.GROQ_API_KEY || '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';
-const HUGGINGFACE_TOKEN = process.env.HUGGINGFACE_TOKEN || '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';
+const GROQ_API_KEY = process.env.GROQ_API_KEY || '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';
+const HUGGINGFACE_TOKEN = process.env.HUGGINGFACE_TOKEN || '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';
 
 // ═══════════════════════════════════════════════════════════
-// 🔥🔥🔥 МЕГА ПРОМПТ ДЛЯ ГЕНИАЛЬНЫХ ПРОЕКТОВ 🔥🔥🔥
+// 🔥 МЕГА ПРОМПТ ДЛЯ ГЕНИАЛЬНЫХ ПРОЕКТОВ
 // ═══════════════════════════════════════════════════════════
-const SYSTEM_PROMPT = `Ты - NeuroCode AI, ЛЕГЕНДАРНЫЙ ИИ-архитектор и full-stack разработчик с 25+ годами опыта в Google, Meta, Apple.
+const SYSTEM_PROMPT = `Ты - NeuroCode AI, ЛЕГЕНДАРНЫЙ ИИ-архитектор и full-stack разработчик с 25+ годами опыта.
 
-╔════════════════════════════════════════════════════════════════════════════════════════╗
-║  ⚠️ КРИТИЧЕСКИ ВАЖНО: ТЫ СОЗДАЁШЬ ТОЛЬКО ШЕДЕВРЫ МИРОВОГО УРОВНЯ!                      ║
-║  Каждый проект должен быть достоин портфолио Senior Developer в FAANG!                 ║
-║  Никаких упрощений! Только ЭЛИТНЫЙ, PRODUCTION-READY КОД!                              ║
-╚════════════════════════════════════════════════════════════════════════════════════════╝
+╔════════════════════════════════════════════════════════════════════════════════╗
+║  ⚠️ КРИТИЧЕСКИ ВАЖНО: ТЫ СОЗДАЁШЬ ТОЛЬКО ШЕДЕВРЫ МИРОВОГО УРОВНЯ!              ║
+║  Каждый проект должен быть достоин портфолио Senior Developer!                 ║
+║  Никаких упрощений! Только ЭЛИТНЫЙ, PRODUCTION-READY КОД!                      ║
+╚════════════════════════════════════════════════════════════════════════════════╝
 
-═══════════════════════════════════════════════════════════════════════════════════════════
-🎯 ТВОЯ ФИЛОСОФИЯ КОДА:
-═══════════════════════════════════════════════════════════════════════════════════════════
-
-"Код должен быть как швейцарские часы - идеально спроектирован, безупречно работает, 
-восхищает своей красотой и продуман до мельчайших деталей."
-
-Перед написанием КАЖДОЙ строки кода ты:
-1. Анализируешь все возможные edge cases
-2. Продумываешь архитектуру на 3 шага вперёд
-3. Выбираешь оптимальное решение из 10 возможных
-4. Пишешь код, который будет работать 10 лет без изменений
-
-═══════════════════════════════════════════════════════════════════════════════════════════
 📏 ОБЯЗАТЕЛЬНЫЕ ТРЕБОВАНИЯ К ОБЪЁМУ:
-═══════════════════════════════════════════════════════════════════════════════════════════
 
-🌐 САЙТЫ:
-   • HTML: минимум 200-300 строк с семантикой
-   • CSS: минимум 500-800 строк с анимациями
-   • JavaScript: минимум 300-500 строк с интерактивностью
-   • ИТОГО: 1000-1600 строк МИНИМУМ!
+🌐 САЙТЫ - минимум 800-1500 строк:
+   • HTML: 150-250 строк с полной семантикой
+   • CSS: 400-700 строк с анимациями, градиентами, адаптивностью
+   • JavaScript: 250-500 строк с интерактивностью
+   • 10+ секций: Hero, About, Services, Portfolio, Testimonials, Team, Pricing, FAQ, Contact, Footer
+   • 15+ CSS анимаций
+   • Glassmorphism, градиенты, тени
 
-🤖 TELEGRAM БОТЫ:
-   • Основной файл: 400-600 строк
-   • Handlers: 300-500 строк
-   • Keyboards: 150-250 строк
-   • Database: 200-300 строк
-   • Utils: 150-200 строк
-   • ИТОГО: 1200-1850 строк МИНИМУМ!
+🤖 TELEGRAM БОТЫ - минимум 1000-1800 строк:
+   • Полная структура проекта с папками
+   • Python + aiogram 3.x
+   • База данных SQLite
+   • Handlers, keyboards, FSM, middlewares
+   • Админ-панель со статистикой
+   • Обработка всех ошибок
 
-⚡ REST API:
-   • Server: 300-400 строк
-   • Routes: 400-600 строк
-   • Controllers: 300-500 строк
-   • Middleware: 200-300 строк
-   • Models: 200-300 строк
-   • ИТОГО: 1400-2100 строк МИНИМУМ!
+⚡ REST API - минимум 1000-1600 строк:
+   • Node.js + Express или Python + FastAPI
+   • JWT авторизация (access + refresh tokens)
+   • CRUD для всех ресурсов
+   • Валидация, middleware, error handling
+   • Swagger документация
 
-═══════════════════════════════════════════════════════════════════════════════════════════
-🌐 САЙТЫ - УРОВЕНЬ AWWWARDS:
-═══════════════════════════════════════════════════════════════════════════════════════════
+❌ КАТЕГОРИЧЕСКИ ЗАПРЕЩЕНО:
+   • "// остальной код здесь"
+   • "/* добавьте сюда */"
+   • Любые сокращения!
+   • Код менее 500 строк для проектов
 
-Каждый сайт ОБЯЗАТЕЛЬНО включает:
+✅ ВСЕГДА:
+   • Полный рабочий код без сокращений
+   • Комментарии на РУССКОМ языке
+   • Инструкция по установке и запуску
+   • Современный красивый дизайн
 
-📄 HTML5 (200+ строк):
-   • Полная семантическая структура
-   • SEO meta теги (title, description, keywords, og:tags)
-   • Favicon, Apple Touch Icons
-   • Schema.org микроразметка
-   • Preload для критических ресурсов
-   • Aria-labels для доступности
+Отвечай ТОЛЬКО на русском языке! 🚀`;
 
-🎨 CSS3 (500+ строк):
-   • CSS Custom Properties (20+ переменных)
-   • Продуманная система цветов и типографики
-   • Flexbox И Grid layouts
-   • 15+ keyframes анимаций:
-     - Fade in/out с разных сторон
-     - Scale, rotate эффекты
-     - Parallax скролл
-     - Hover 3D transforms
-     - Loading анимации
-     - Морфинг форм
-   • Glassmorphism, Neumorphism эффекты
-   • Gradient backgrounds и borders
-   • Custom scrollbar
-   • Selection стили
-   • Focus states для accessibility
-   • 5+ брейкпоинтов для адаптивности
-   • Print стили
+// ═══════════════════════════════════════════════════════════
+// СПЕЦИАЛИЗИРОВАННЫЕ ПРОМПТЫ
+// ═══════════════════════════════════════════════════════════
+const SITE_PROMPT = (desc) => `Создай ПОТРЯСАЮЩИЙ веб-сайт уровня AWWWARDS: ${desc}
+
+ОБЯЗАТЕЛЬНО ВКЛЮЧИ (минимум 1000 строк общего кода):
+
+📄 HTML (200+ строк):
+- Семантическая структура
+- SEO meta теги
+- Open Graph
+- Все секции
+
+🎨 CSS (500+ строк):
+- CSS переменные (15+ штук)
+- Градиенты, glassmorphism
+- 10+ keyframes анимаций
+- Hover эффекты с transform
+- Полная адаптивность
+- Custom scrollbar
 
 💻 JavaScript (300+ строк):
-   • Модульная ES6+ архитектура
-   • IntersectionObserver для scroll анимаций
-   • Smooth scroll с easing
-   • Динамическая навигация
-   • Модальные окна с фокус-трапом
-   • Слайдеры/карусели с touch support
-   • Валидация форм с UX feedback
-   • Lazy loading изображений
-   • Dark/Light theme switcher
-   • LocalStorage для сохранения
-   • Debounce/Throttle для оптимизации
-   • Параллакс эффекты
-   • Анимированные счётчики
-   • Typing эффект для текста
+- Smooth scroll
+- Intersection Observer анимации
+- Мобильное меню
+- Модальные окна
+- Валидация форм
+- Слайдер/карусель
+- Параллакс
 
-📱 ОБЯЗАТЕЛЬНЫЕ СЕКЦИИ:
-   1. Hero - WOW-эффект с первых секунд, CTA кнопки
-   2. Features/Services - с иконками и анимациями
-   3. About - история, миссия, ценности
-   4. Portfolio/Works - галерея с фильтрами
-   5. Testimonials - карусель отзывов
-   6. Team - карточки с hover эффектами
-   7. Pricing - таблица тарифов
-   8. FAQ - аккордеон
-   9. Blog/News - превью статей
-   10. Contact - форма с валидацией + карта
-   11. Footer - навигация, соцсети, newsletter
+📱 СЕКЦИИ:
+1. Hero с CTA
+2. О компании
+3. Услуги
+4. Преимущества
+5. Портфолио
+6. Отзывы
+7. Команда
+8. Цены
+9. FAQ (аккордеон)
+10. Контакты с формой
+11. Footer
 
-═══════════════════════════════════════════════════════════════════════════════════════════
-🤖 TELEGRAM БОТЫ - ENTERPRISE УРОВЕНЬ:
-═══════════════════════════════════════════════════════════════════════════════════════════
+Дай ПОЛНЫЙ код без сокращений!`;
 
-Структура проекта:
-\`\`\`
-project/
-├── bot.py                 # Точка входа (100+ строк)
-├── config.py              # Конфигурация (50+ строк)
+const BOT_PROMPT = (desc) => `Создай ПРОФЕССИОНАЛЬНЫЙ Telegram бот: ${desc}
+
+СТРУКТУРА (минимум 1200 строк):
+
+bot/
+├── main.py (100+ строк)
+├── config.py (50+ строк)
 ├── handlers/
-│   ├── __init__.py
-│   ├── start.py           # Стартовые команды (150+ строк)
-│   ├── user.py            # Пользовательские функции (200+ строк)
-│   ├── admin.py           # Админ панель (200+ строк)
-│   ├── payments.py        # Платежи (150+ строк)
-│   └── callbacks.py       # Callback handlers (150+ строк)
+│   ├── start.py (150+ строк)
+│   ├── user.py (200+ строк)
+│   ├── admin.py (150+ строк)
+│   └── callbacks.py (100+ строк)
 ├── keyboards/
-│   ├── inline.py          # Inline клавиатуры (100+ строк)
-│   └── reply.py           # Reply клавиатуры (80+ строк)
+│   ├── inline.py (100+ строк)
+│   └── reply.py (60+ строк)
 ├── database/
-│   ├── models.py          # SQLAlchemy модели (150+ строк)
-│   └── crud.py            # CRUD операции (200+ строк)
-├── services/
-│   ├── api.py             # Внешние API (100+ строк)
-│   └── notifications.py   # Уведомления (80+ строк)
+│   ├── models.py (100+ строк)
+│   └── db.py (150+ строк)
 ├── utils/
-│   ├── helpers.py         # Хелперы (100+ строк)
-│   ├── decorators.py      # Декораторы (50+ строк)
-│   └── validators.py      # Валидаторы (80+ строк)
+│   └── helpers.py (80+ строк)
 ├── middlewares/
-│   ├── throttling.py      # Антифлуд (60+ строк)
-│   └── logging.py         # Логирование (50+ строк)
-├── .env.example
+│   └── throttling.py (50+ строк)
 ├── requirements.txt
-├── docker-compose.yml
 └── README.md
-\`\`\`
 
-Обязательный функционал:
-   ✅ Полная система регистрации с верификацией
-   ✅ Профили пользователей с настройками
-   ✅ Многоуровневая админ-панель
-   ✅ Статистика и аналитика
-   ✅ Система уведомлений
-   ✅ Реферальная программа
-   ✅ Мультиязычность (i18n)
-   ✅ Платежи (если нужны)
-   ✅ Экспорт данных
-   ✅ Резервное копирование
-   ✅ Rate limiting
-   ✅ Graceful shutdown
-   ✅ Health checks
+ФУНКЦИОНАЛ:
+- Регистрация пользователей
+- Профили в БД
+- Админ-панель
+- FSM диалоги
+- Inline/Reply клавиатуры
+- Пагинация
+- Обработка ошибок
 
-═══════════════════════════════════════════════════════════════════════════════════════════
-⚡ REST API - PRODUCTION УРОВЕНЬ:
-═══════════════════════════════════════════════════════════════════════════════════════════
+Используй Python + aiogram 3.x + SQLite.
+Дай КОД КАЖДОГО ФАЙЛА полностью!`;
 
-   ✅ Express.js/Fastify или FastAPI/Django
-   ✅ JWT авторизация (access + refresh tokens)
-   ✅ Role-based access control (RBAC)
-   ✅ Request validation (Joi/Zod/Pydantic)
-   ✅ Error handling middleware
-   ✅ Request logging (Morgan/Winston)
-   ✅ Rate limiting per endpoint
-   ✅ CORS configuration
-   ✅ Helmet security headers
-   ✅ API versioning (v1, v2)
-   ✅ Pagination, filtering, sorting
-   ✅ File uploads with validation
-   ✅ Caching strategy (Redis)
-   ✅ Database migrations
-   ✅ Seed data
-   ✅ Unit & Integration tests
-   ✅ Swagger/OpenAPI documentation
-   ✅ Docker configuration
-   ✅ CI/CD pipeline готовность
+const API_PROMPT = (desc) => `Создай PRODUCTION REST API: ${desc}
 
-═══════════════════════════════════════════════════════════════════════════════════════════
-🐛 ИСПРАВЛЕНИЕ ОШИБОК - ДЕТЕКТИВНЫЙ ПОДХОД:
-═══════════════════════════════════════════════════════════════════════════════════════════
+СТРУКТУРА (минимум 1000 строк):
 
-Когда тебя просят исправить ошибку:
-1. Проанализируй ВСЮ кодовую базу
-2. Найди ВСЕ потенциальные проблемы (не только указанную)
-3. Объясни ПОЧЕМУ возникла ошибка
-4. Дай ПОЛНЫЙ исправленный код (не фрагменты!)
-5. Добавь защиту от подобных ошибок в будущем
-6. Предложи улучшения архитектуры
+api/
+├── src/
+│   ├── index.js (80+ строк)
+│   ├── app.js (100+ строк)
+│   ├── routes/ (300+ строк)
+│   ├── controllers/ (300+ строк)
+│   ├── middleware/ (150+ строк)
+│   ├── models/ (150+ строк)
+│   └── utils/ (100+ строк)
+├── .env.example
+├── package.json
+└── README.md
 
-═══════════════════════════════════════════════════════════════════════════════════════════
-📝 ФОРМАТ ОТВЕТА:
-═══════════════════════════════════════════════════════════════════════════════════════════
+ФУНКЦИОНАЛ:
+- JWT авторизация
+- CRUD операции
+- Валидация данных
+- Error handling
+- Rate limiting
+- CORS
+- Swagger docs
 
-1. 📌 **Обзор проекта** - что создаём и почему это будет круто
-2. 🛠️ **Технологии** - обоснование выбора стека
-3. 📁 **Структура** - архитектура проекта
-4. 💻 **ПОЛНЫЙ КОД** - каждый файл целиком, без сокращений!
-5. 📦 **Установка** - пошаговая инструкция
-6. 🚀 **Запуск** - команды для запуска
-7. 🎨 **Кастомизация** - как изменить под себя
-8. 💡 **Улучшения** - идеи для развития
-
-═══════════════════════════════════════════════════════════════════════════════════════════
-❌ КАТЕГОРИЧЕСКИ ЗАПРЕЩЕНО:
-═══════════════════════════════════════════════════════════════════════════════════════════
-
-НИКОГДА не пиши:
-   • "// ... остальной код аналогично"
-   • "/* добавьте остальные функции */"
-   • "и так далее..."
-   • "по аналогии с предыдущим..."
-   • "здесь должен быть код..."
-   • Любые сокращения и заглушки!
-
-НИКОГДА не давай:
-   • Код менее 500 строк для сайтов
-   • Ботов без полной структуры проекта
-   • API без аутентификации и валидации
-   • Проекты без обработки ошибок
-   • Код без комментариев
-
-═══════════════════════════════════════════════════════════════════════════════════════════
-✅ ТВОИ ПРИНЦИПЫ:
-═══════════════════════════════════════════════════════════════════════════════════════════
-
-1. Каждый проект - шедевр, достойный GitHub Trending
-2. Код настолько чистый, что его можно читать как книгу
-3. Архитектура настолько продуманная, что её можно масштабировать в 100 раз
-4. UX настолько приятный, что пользователи влюбляются с первого клика
-5. Безопасность настолько надёжная, что хакеры плачут
-
-Ты создаёшь код, который:
-   • Можно сразу деплоить в production
-   • Будет работать годами без багов
-   • Легко поддерживать и расширять
-   • Вызывает восхищение у других разработчиков
-
-ВСЕГДА отвечай на РУССКОМ языке!
-КАЖДЫЙ проект должен быть ГЕНИАЛЬНЫМ! 🚀`;
-
-// ═══════════════════════════════════════════════════════════
-// 🎨 СПЕЦИАЛИЗИРОВАННЫЕ ПРОМПТЫ
-// ═══════════════════════════════════════════════════════════
-const SITE_PROMPT = (description) => `Создай ПОТРЯСАЮЩИЙ, AWARD-WINNING веб-сайт: ${description}
-
-🎯 ЭТО ДОЛЖЕН БЫТЬ САЙТ УРОВНЯ AWWWARDS!
-
-📋 ОБЯЗАТЕЛЬНО ВКЛЮЧИ:
-
-1️⃣ HTML (200+ строк):
-   - Семантическая структура (header, nav, main, sections, footer)
-   - Meta теги для SEO
-   - Open Graph для соцсетей
-   - Favicon
-   - Preconnect для шрифтов
-
-2️⃣ CSS (600+ строк):
-   - CSS переменные для цветов и размеров
-   - Красивые градиенты
-   - Glassmorphism эффекты
-   - 10+ анимаций @keyframes
-   - Плавные hover эффекты
-   - Тени и глубина
-   - Полная адаптивность (mobile, tablet, desktop)
-   - Custom scrollbar
-   - Плавные transition
-
-3️⃣ JavaScript (300+ строк):
-   - Плавный скролл
-   - Анимации при появлении элементов
-   - Параллакс эффекты
-   - Мобильное меню
-   - Модальные окна
-   - Валидация форм
-   - Слайдер/карусель
-   - Анимированные счётчики
-   - Ленивая загрузка
-
-4️⃣ СЕКЦИИ:
-   - Hero с мощным заголовком и CTA
-   - О нас / О компании
-   - Услуги с иконками
-   - Преимущества
-   - Портфолио / Работы
-   - Отзывы клиентов
-   - Команда
-   - Цены / Тарифы
-   - FAQ (аккордеон)
-   - Контакты с формой
-   - Footer
-
-Дай ПОЛНЫЙ КОД без единого сокращения! Каждый файл целиком!`;
-
-const BOT_PROMPT = (description) => `Создай ПРОФЕССИОНАЛЬНЫЙ Telegram бот ENTERPRISE уровня: ${description}
-
-🎯 ЭТО ДОЛЖЕН БЫТЬ БОТ УРОВНЯ КРУПНОЙ КОМПАНИИ!
-
-📋 ОБЯЗАТЕЛЬНО ВКЛЮЧИ:
-
-1️⃣ СТРУКТУРА ПРОЕКТА:
-   bot/
-   ├── main.py (точка входа, 100+ строк)
-   ├── config.py (конфигурация, 50+ строк)
-   ├── handlers/
-   │   ├── __init__.py
-   │   ├── start.py (стартовые команды, 150+ строк)
-   │   ├── user.py (пользовательские функции, 200+ строк)
-   │   ├── admin.py (админка, 150+ строк)
-   │   └── callbacks.py (callback обработчики, 100+ строк)
-   ├── keyboards/
-   │   ├── inline.py (inline клавиатуры, 100+ строк)
-   │   └── reply.py (reply клавиатуры, 60+ строк)
-   ├── database/
-   │   ├── models.py (модели данных, 100+ строк)
-   │   └── db.py (работа с БД, 150+ строк)
-   ├── utils/
-   │   ├── helpers.py (вспомогательные функции, 80+ строк)
-   │   └── decorators.py (декораторы, 50+ строк)
-   ├── middlewares/
-   │   └── throttling.py (антифлуд, 50+ строк)
-   ├── .env.example
-   ├── requirements.txt
-   └── README.md
-
-2️⃣ ТЕХНОЛОГИИ:
-   - Python 3.11+
-   - aiogram 3.x (последняя версия!)
-   - SQLAlchemy + aiosqlite
-   - pydantic для валидации
-   - python-dotenv
-
-3️⃣ ФУНКЦИОНАЛ:
-   - Система регистрации пользователей
-   - Профили с настройками
-   - Админ-панель со статистикой
-   - FSM для сложных диалогов
-   - Inline и Reply клавиатуры
-   - Пагинация для списков
-   - Обработка ВСЕХ ошибок
-   - Логирование
-   - Rate limiting
-
-4️⃣ КАЖДЫЙ ФАЙЛ ДОЛЖЕН БЫТЬ ПОЛНЫМ!
-   Никаких "# остальной код" или "...".
-   Полная рабочая реализация!
-
-Дай КОД КАЖДОГО ФАЙЛА целиком! Бот должен работать сразу после копирования!`;
-
-const API_PROMPT = (description) => `Создай PRODUCTION-READY REST API: ${description}
-
-🎯 ЭТО ДОЛЖЕН БЫТЬ API УРОВНЯ СТАРТАПА В Y COMBINATOR!
-
-📋 ОБЯЗАТЕЛЬНО ВКЛЮЧИ:
-
-1️⃣ СТРУКТУРА:
-   api/
-   ├── src/
-   │   ├── index.js (точка входа, 80+ строк)
-   │   ├── app.js (Express app, 100+ строк)
-   │   ├── config/
-   │   │   ├── database.js (60+ строк)
-   │   │   └── jwt.js (40+ строк)
-   │   ├── routes/
-   │   │   ├── auth.js (150+ строк)
-   │   │   ├── users.js (200+ строк)
-   │   │   └── [resource].js (200+ строк)
-   │   ├── controllers/
-   │   │   ├── authController.js (200+ строк)
-   │   │   ├── userController.js (150+ строк)
-   │   │   └── [resource]Controller.js (200+ строк)
-   │   ├── middleware/
-   │   │   ├── auth.js (80+ строк)
-   │   │   ├── validate.js (60+ строк)
-   │   │   ├── errorHandler.js (80+ строк)
-   │   │   └── rateLimiter.js (40+ строк)
-   │   ├── models/
-   │   │   ├── User.js (100+ строк)
-   │   │   └── [Resource].js (80+ строк)
-   │   ├── utils/
-   │   │   ├── helpers.js (60+ строк)
-   │   │   └── validators.js (80+ строк)
-   │   └── docs/
-   │       └── swagger.js (100+ строк)
-   ├── .env.example
-   ├── package.json
-   └── README.md
-
-2️⃣ ФУНКЦИОНАЛ:
-   - JWT авторизация (access + refresh tokens)
-   - Регистрация и логин
-   - CRUD для всех ресурсов
-   - Валидация всех входных данных
-   - Пагинация, сортировка, фильтрация
-   - Upload файлов
-   - Rate limiting
-   - CORS настройка
-   - Swagger документация
-   - Обработка всех ошибок
-   - Логирование запросов
-
-Дай КОД КАЖДОГО ФАЙЛА целиком!`;
-
-const FIX_PROMPT = (error) => `СРОЧНО ИСПРАВЬ ЭТУ ПРОБЛЕМУ: ${error}
-
-🔍 ТВОЯ ЗАДАЧА:
-
-1. Проанализируй ошибку глубоко
-2. Найди ВСЕ причины проблемы
-3. Дай ПОЛНЫЙ исправленный код (весь файл целиком!)
-4. Объясни что было не так и почему
-5. Добавь защиту от подобных ошибок
-6. Предложи улучшения
-
-⚠️ ВАЖНО:
-- Давай ПОЛНЫЙ файл, не фрагменты!
-- Код должен работать сразу!
-- Добавь комментарии к исправлениям`;
+Дай КОД КАЖДОГО ФАЙЛА полностью!`;
 
 // ═══════════════════════════════════════════════════════════
 // МОДЕЛИ
 // ═══════════════════════════════════════════════════════════
 const GROQ_MODELS = [
-    { id: 'llama-3.3-70b-versatile', name: 'LLaMA 3.3 70B', description: '🏆 Самая мощная' },
-    { id: 'llama-3.1-70b-versatile', name: 'LLaMA 3.1 70B', description: '🦙 Мощная' },
-    { id: 'mixtral-8x7b-32768', name: 'Mixtral 8x7B', description: '🌀 32K контекст' },
-    { id: 'gemma2-9b-it', name: 'Gemma 2 9B', description: '🔷 Google' },
-    { id: 'llama-3.1-8b-instant', name: 'LLaMA 3.1 8B', description: '⚡ Быстрая' }
+    { id: 'llama-3.3-70b-versatile', name: 'LLaMA 3.3 70B', description: '🏆 Самая мощная, 70B параметров' },
+    { id: 'llama-3.1-70b-versatile', name: 'LLaMA 3.1 70B', description: '🦙 Мощная универсальная' },
+    { id: 'mixtral-8x7b-32768', name: 'Mixtral 8x7B', description: '🌀 MoE, 32K контекст' },
+    { id: 'gemma2-9b-it', name: 'Gemma 2 9B', description: '🔷 Google Gemma 2' },
+    { id: 'llama-3.1-8b-instant', name: 'LLaMA 3.1 8B', description: '⚡ Супер быстрая' }
 ];
 
 const HUGGINGFACE_MODELS = [
-    { id: 'Qwen/Qwen2.5-Coder-32B-Instruct', name: 'Qwen Coder 32B', description: '🏆 Для кода' },
-    { id: 'meta-llama/Llama-3.3-70B-Instruct', name: 'LLaMA 3.3 70B', description: '🦙 Meta' },
-    { id: 'mistralai/Mixtral-8x7B-Instruct-v0.1', name: 'Mixtral 8x7B', description: '🌀 MoE' }
+    { id: 'Qwen/Qwen2.5-Coder-32B-Instruct', name: 'Qwen 2.5 Coder 32B', description: '🏆 Лучшая для кода' },
+    { id: 'meta-llama/Llama-3.3-70B-Instruct', name: 'LLaMA 3.3 70B', description: '🦙 Meta LLaMA' },
+    { id: 'mistralai/Mixtral-8x7B-Instruct-v0.1', name: 'Mixtral 8x7B', description: '🌀 Mistral MoE' }
 ];
 
 const TOTAL_MODELS = GROQ_MODELS.length + HUGGINGFACE_MODELS.length;
@@ -492,35 +222,27 @@ setInterval(saveDB, 30000);
 loadDB();
 
 // ═══════════════════════════════════════════════════════════
-// GROQ API
+// AI ФУНКЦИИ
 // ═══════════════════════════════════════════════════════════
 async function callGroq(messages, modelId) {
     try {
         console.log('🟢 Groq:', modelId);
-        
-        const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        var response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + GROQ_API_KEY
-            },
+            headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + GROQ_API_KEY },
             body: JSON.stringify({
                 model: modelId,
                 messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...messages],
                 temperature: 0.7,
-                max_tokens: 32768, // МАКСИМУМ!
-                top_p: 0.95
+                max_tokens: 32000
             })
         });
-        
-        const data = await response.json();
-        
+        var data = await response.json();
         if (data.choices && data.choices[0] && data.choices[0].message) {
             console.log('✅ Groq OK:', data.choices[0].message.content.length, 'chars');
             db.stats.groq++;
             return { content: data.choices[0].message.content, model: modelId, provider: 'Groq' };
         }
-        
         if (data.error) console.log('❌ Groq:', data.error.message);
         return null;
     } catch (e) {
@@ -529,35 +251,25 @@ async function callGroq(messages, modelId) {
     }
 }
 
-// ═══════════════════════════════════════════════════════════
-// HUGGINGFACE API
-// ═══════════════════════════════════════════════════════════
 async function callHuggingFace(messages, modelId) {
     try {
         console.log('🟡 HuggingFace:', modelId);
-        
-        const response = await fetch('https://router.huggingface.co/hf-inference/models/' + modelId + '/v1/chat/completions', {
+        var response = await fetch('https://router.huggingface.co/hf-inference/models/' + modelId + '/v1/chat/completions', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + HUGGINGFACE_TOKEN
-            },
+            headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + HUGGINGFACE_TOKEN },
             body: JSON.stringify({
                 model: modelId,
                 messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...messages],
-                max_tokens: 16384,
+                max_tokens: 16000,
                 temperature: 0.7
             })
         });
-        
-        const data = await response.json();
-        
+        var data = await response.json();
         if (data.choices && data.choices[0] && data.choices[0].message) {
             console.log('✅ HuggingFace OK');
             db.stats.hf++;
             return { content: data.choices[0].message.content, model: modelId, provider: 'HuggingFace' };
         }
-        
         return null;
     } catch (e) {
         console.log('❌ HF:', e.message);
@@ -565,30 +277,24 @@ async function callHuggingFace(messages, modelId) {
     }
 }
 
-// ═══════════════════════════════════════════════════════════
-// AI RESPONSE
-// ═══════════════════════════════════════════════════════════
 async function getAIResponse(messages) {
     db.stats.total++;
-    
-    for (const model of GROQ_MODELS) {
-        const result = await callGroq(messages, model.id);
+    for (var i = 0; i < GROQ_MODELS.length; i++) {
+        var result = await callGroq(messages, GROQ_MODELS[i].id);
         if (result && result.content && result.content.length > 200) {
             db.stats.success++;
             return result;
         }
-        await new Promise(r => setTimeout(r, 500));
+        await new Promise(function(r) { setTimeout(r, 500); });
     }
-    
-    for (const model of HUGGINGFACE_MODELS) {
-        const result = await callHuggingFace(messages, model.id);
-        if (result && result.content && result.content.length > 200) {
+    for (var j = 0; j < HUGGINGFACE_MODELS.length; j++) {
+        var result2 = await callHuggingFace(messages, HUGGINGFACE_MODELS[j].id);
+        if (result2 && result2.content && result2.content.length > 200) {
             db.stats.success++;
-            return result;
+            return result2;
         }
-        await new Promise(r => setTimeout(r, 500));
+        await new Promise(function(r) { setTimeout(r, 500); });
     }
-    
     return { content: '⚠️ AI временно недоступен. Попробуйте через минуту.', model: 'fallback', provider: 'System' };
 }
 
@@ -609,63 +315,48 @@ function generateApiKey() {
     return key;
 }
 
+function formatTelegram(text) {
+    if (!text) return 'Ошибка';
+    if (text.length > 4000) text = text.substring(0, 3900) + '\n\n... (обрезано)';
+    return text
+        .replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/```(\w*)\n([\s\S]*?)```/g, function(m, lang, code) { return '<pre><code>' + code.trim() + '</code></pre>'; })
+        .replace(/`([^`]+)`/g, '<code>$1</code>')
+        .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
+        .replace(/\*([^*]+)\*/g, '<i>$1</i>');
+}
+
 // ═══════════════════════════════════════════════════════════
 // ОТПРАВКА ДЛИННЫХ СООБЩЕНИЙ
 // ═══════════════════════════════════════════════════════════
 async function sendLongMessage(chatId, text, model, provider) {
-    // Разбиваем на части по 4000 символов
     var parts = [];
     var current = '';
     var lines = text.split('\n');
     
     for (var i = 0; i < lines.length; i++) {
-        var line = lines[i];
-        if ((current + '\n' + line).length > 3900) {
+        if ((current + '\n' + lines[i]).length > 3900) {
             if (current) parts.push(current);
-            current = line;
+            current = lines[i];
         } else {
-            current = current ? current + '\n' + line : line;
+            current = current ? current + '\n' + lines[i] : lines[i];
         }
     }
     if (current) parts.push(current);
     
-    // Отправляем каждую часть
     for (var j = 0; j < parts.length; j++) {
-        var part = parts[j];
-        
-        // Форматируем
-        var formatted = part
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/```(\w*)\n([\s\S]*?)```/g, function(m, lang, code) {
-                return '<pre><code>' + code.trim() + '</code></pre>';
-            })
-            .replace(/`([^`]+)`/g, '<code>$1</code>')
-            .replace(/\*\*([^*]+)\*\*/g, '<b>$1</b>')
-            .replace(/\*([^*]+)\*/g, '<i>$1</i>');
-        
-        // Добавляем номер части
-        if (parts.length > 1) {
-            formatted = '<b>📄 Часть ' + (j + 1) + '/' + parts.length + '</b>\n\n' + formatted;
-        }
-        
-        // Добавляем инфо о модели к последней части
-        if (j === parts.length - 1) {
-            formatted += '\n\n<i>🤖 ' + provider + ': ' + model + '</i>';
-        }
-        
+        var formatted = formatTelegram(parts[j]);
+        if (parts.length > 1) formatted = '<b>📄 Часть ' + (j + 1) + '/' + parts.length + '</b>\n\n' + formatted;
+        if (j === parts.length - 1) formatted += '\n\n<i>🤖 ' + provider + ': ' + model + '</i>';
         await send(chatId, formatted);
-        
-        if (j < parts.length - 1) {
-            await new Promise(r => setTimeout(r, 500));
-        }
+        if (j < parts.length - 1) await new Promise(function(r) { setTimeout(r, 500); });
     }
 }
 
 // ═══════════════════════════════════════════════════════════
 // TELEGRAM API
 // ═══════════════════════════════════════════════════════════
-const TG_API = 'https://api.telegram.org/bot' + BOT_TOKEN;
+var TG_API = 'https://api.telegram.org/bot' + BOT_TOKEN;
 
 async function tg(method, body) {
     try {
@@ -675,53 +366,33 @@ async function tg(method, body) {
             body: JSON.stringify(body)
         });
         return await r.json();
-    } catch (e) {
-        return null;
-    }
+    } catch (e) { return null; }
 }
 
 function send(chatId, text, options) {
-    return tg('sendMessage', Object.assign({ 
-        chat_id: chatId, 
-        text: text, 
-        parse_mode: 'HTML',
-        disable_web_page_preview: true 
-    }, options || {}));
+    return tg('sendMessage', Object.assign({ chat_id: chatId, text: text, parse_mode: 'HTML', disable_web_page_preview: true }, options || {}));
 }
 
-function typing(chatId) {
-    return tg('sendChatAction', { chat_id: chatId, action: 'typing' });
-}
-
-function answer(id, text) {
-    return tg('answerCallbackQuery', { callback_query_id: id, text: text || '' });
-}
+function typing(chatId) { return tg('sendChatAction', { chat_id: chatId, action: 'typing' }); }
+function answer(id, text) { return tg('answerCallbackQuery', { callback_query_id: id, text: text || '' }); }
 
 // ═══════════════════════════════════════════════════════════
 // WEBHOOK
 // ═══════════════════════════════════════════════════════════
 app.post(WEBHOOK_PATH, async function(req, res) {
     res.sendStatus(200);
-    
     var message = req.body.message;
     var callback = req.body.callback_query;
     
-    if (callback) {
-        await handleCallback(callback);
-        return;
-    }
-    
+    if (callback) { await handleCallback(callback); return; }
     if (!message || !message.text) return;
     
     var chatId = message.chat.id;
     var text = message.text;
     var from = message.from;
     
-    if (text.charAt(0) === '/') {
-        await handleCommand(chatId, text, from);
-    } else {
-        await handleChat(chatId, text, from);
-    }
+    if (text.charAt(0) === '/') await handleCommand(chatId, text, from);
+    else await handleChat(chatId, text, from);
 });
 
 // ═══════════════════════════════════════════════════════════
@@ -738,119 +409,70 @@ async function handleCommand(chatId, text, from) {
             'Привет, <b>' + from.first_name + '</b>! 👋\n\n' +
             'Я создаю <b>ПРОФЕССИОНАЛЬНЫЕ проекты</b>:\n\n' +
             '🌐 <b>Сайты</b> — 1000+ строк, уровень Awwwards\n' +
-            '🤖 <b>Боты</b> — 1500+ строк, enterprise архитектура\n' +
-            '⚡ <b>API</b> — 1400+ строк, production ready\n\n' +
+            '🤖 <b>Боты</b> — 1200+ строк, enterprise\n' +
+            '⚡ <b>API</b> — 1000+ строк, production\n\n' +
             '🧠 <b>' + TOTAL_MODELS + ' AI моделей</b>\n' +
-            '🟢 Groq — супер быстрые\n' +
-            '🟡 HuggingFace — мощные\n\n' +
+            '🟢 Groq — ' + GROQ_MODELS.length + ' моделей (быстрые)\n' +
+            '🟡 HuggingFace — ' + HUGGINGFACE_MODELS.length + ' моделей\n\n' +
             '<b>Команды:</b>\n' +
-            '/site описание — Создать сайт\n' +
-            '/bot описание — Создать Telegram бота\n' +
-            '/api описание — Создать REST API\n' +
-            '/fix ошибка — Исправить код\n\n' +
+            '/site описание — Сайт\n' +
+            '/bot описание — Telegram бот\n' +
+            '/api описание — REST API\n' +
+            '/code задача — Любой код\n\n' +
             'Или просто напиши что нужно! 🎯',
-            {
-                reply_markup: {
-                    inline_keyboard: [
-                        [{ text: '🌐 Платформа', url: DOMAIN }],
-                        [{ text: '🔐 Код для сайта', callback_data: 'auth' }, { text: '📊 Статус', callback_data: 'stats' }]
-                    ]
-                }
-            }
+            { reply_markup: { inline_keyboard: [
+                [{ text: '🌐 Платформа', url: DOMAIN }],
+                [{ text: '🔐 Код для сайта', callback_data: 'auth' }, { text: '📊 Статус', callback_data: 'stats' }],
+                [{ text: '🤖 Модели', callback_data: 'models' }, { text: '🗑️ Очистить', callback_data: 'clear' }]
+            ]}}
         );
     } else if (cmd === '/auth') {
         var code = generateCode();
         authCodes.set(code, { telegramId: from.id, username: from.username, firstName: from.first_name, createdAt: Date.now() });
         setTimeout(function() { authCodes.delete(code); }, 600000);
-        await send(chatId, '🔐 <b>Код для входа</b>\n\n<code>' + code + '</code>\n\n⏰ 10 минут');
+        await send(chatId, '🔐 <b>Код для входа</b>\n\n<code>' + code + '</code>\n\n⏰ 10 минут', { reply_markup: { inline_keyboard: [[{ text: '🌐 Открыть сайт', url: DOMAIN }]] }});
     } else if (cmd === '/site') {
-        if (!args) {
-            await send(chatId, '🌐 <b>Генератор сайтов AWWWARDS уровня</b>\n\n' +
-                'Использование: <code>/site описание</code>\n\n' +
-                'Примеры:\n' +
-                '• <code>/site лендинг для IT стартапа</code>\n' +
-                '• <code>/site интернет-магазин одежды</code>\n' +
-                '• <code>/site портфолио дизайнера</code>\n' +
-                '• <code>/site корпоративный сайт</code>\n\n' +
-                '💎 Каждый сайт: 1000+ строк кода!');
-            return;
-        }
-        await send(chatId, '🎨 Создаю ПОТРЯСАЮЩИЙ сайт...\n\n⏳ Это займёт 30-60 секунд.\nГотовлю 1000+ строк кода!');
+        if (!args) { await send(chatId, '🌐 <b>Генератор сайтов</b>\n\nИспользование: <code>/site описание</code>\n\nПример: <code>/site лендинг для IT компании</code>\n\n💎 Каждый сайт: 1000+ строк!'); return; }
+        await send(chatId, '🎨 Создаю ПОТРЯСАЮЩИЙ сайт...\n⏳ 30-60 секунд');
         await typing(chatId);
         var interval1 = setInterval(function() { typing(chatId); }, 5000);
         var result1 = await getAIResponse([{ role: 'user', content: SITE_PROMPT(args) }]);
         clearInterval(interval1);
         await sendLongMessage(chatId, result1.content, result1.model, result1.provider);
     } else if (cmd === '/bot') {
-        if (!args) {
-            await send(chatId, '🤖 <b>Генератор Telegram ботов</b>\n\n' +
-                'Использование: <code>/bot описание</code>\n\n' +
-                'Примеры:\n' +
-                '• <code>/bot магазин с корзиной и оплатой</code>\n' +
-                '• <code>/bot бот для записи к врачу</code>\n' +
-                '• <code>/bot AI помощник</code>\n\n' +
-                '💎 Каждый бот: 1500+ строк кода!');
-            return;
-        }
-        await send(chatId, '🤖 Создаю ENTERPRISE бота...\n\n⏳ Это займёт 30-60 секунд.\nГотовлю 1500+ строк кода!');
+        if (!args) { await send(chatId, '🤖 <b>Генератор ботов</b>\n\nИспользование: <code>/bot описание</code>\n\nПример: <code>/bot магазин с корзиной</code>\n\n💎 Каждый бот: 1200+ строк!'); return; }
+        await send(chatId, '🤖 Создаю ENTERPRISE бота...\n⏳ 30-60 секунд');
         await typing(chatId);
         var interval2 = setInterval(function() { typing(chatId); }, 5000);
         var result2 = await getAIResponse([{ role: 'user', content: BOT_PROMPT(args) }]);
         clearInterval(interval2);
         await sendLongMessage(chatId, result2.content, result2.model, result2.provider);
     } else if (cmd === '/api') {
-        if (!args) {
-            await send(chatId, '⚡ <b>Генератор REST API</b>\n\n' +
-                'Использование: <code>/api описание</code>\n\n' +
-                'Примеры:\n' +
-                '• <code>/api для интернет-магазина</code>\n' +
-                '• <code>/api для блога с комментариями</code>\n' +
-                '• <code>/api для системы задач</code>\n\n' +
-                '💎 Каждый API: 1400+ строк кода!');
-            return;
-        }
-        await send(chatId, '⚡ Создаю PRODUCTION API...\n\n⏳ Это займёт 30-60 секунд.\nГотовлю 1400+ строк кода!');
+        if (!args) { await send(chatId, '⚡ <b>Генератор API</b>\n\nИспользование: <code>/api описание</code>\n\nПример: <code>/api для блога</code>\n\n💎 Каждый API: 1000+ строк!'); return; }
+        await send(chatId, '⚡ Создаю PRODUCTION API...\n⏳ 30-60 секунд');
         await typing(chatId);
         var interval3 = setInterval(function() { typing(chatId); }, 5000);
         var result3 = await getAIResponse([{ role: 'user', content: API_PROMPT(args) }]);
         clearInterval(interval3);
         await sendLongMessage(chatId, result3.content, result3.model, result3.provider);
-    } else if (cmd === '/fix') {
-        if (!args) {
-            await send(chatId, '🔧 <b>Исправление ошибок</b>\n\n' +
-                'Использование: <code>/fix описание ошибки и код</code>\n\n' +
-                'Я проанализирую проблему и дам полное решение!');
-            return;
-        }
+    } else if (cmd === '/code') {
+        if (!args) { await send(chatId, '💻 <b>Генератор кода</b>\n\nИспользование: <code>/code задача</code>'); return; }
         await typing(chatId);
         var interval4 = setInterval(function() { typing(chatId); }, 5000);
-        var result4 = await getAIResponse([{ role: 'user', content: FIX_PROMPT(args) }]);
+        var result4 = await getAIResponse([{ role: 'user', content: args }]);
         clearInterval(interval4);
         await sendLongMessage(chatId, result4.content, result4.model, result4.provider);
+    } else if (cmd === '/models') {
+        var groqList = GROQ_MODELS.map(function(m) { return '• <b>' + m.name + '</b> - ' + m.description; }).join('\n');
+        var hfList = HUGGINGFACE_MODELS.map(function(m) { return '• <b>' + m.name + '</b> - ' + m.description; }).join('\n');
+        await send(chatId, '🤖 <b>AI Модели (' + TOTAL_MODELS + ')</b>\n\n<b>🟢 Groq:</b>\n' + groqList + '\n\n<b>🟡 HuggingFace:</b>\n' + hfList);
     } else if (cmd === '/clear') {
         chatHistories.delete(chatId);
         await send(chatId, '🗑️ История очищена!');
     } else if (cmd === '/status') {
-        await send(chatId,
-            '📊 <b>Статистика</b>\n\n' +
-            '🤖 Моделей: ' + TOTAL_MODELS + '\n' +
-            '📈 Запросов: ' + db.stats.total + '\n' +
-            '✅ Успешных: ' + db.stats.success + '\n' +
-            '🟢 Groq: ' + (db.stats.groq || 0) + '\n' +
-            '🟡 HF: ' + (db.stats.hf || 0)
-        );
+        await send(chatId, '📊 <b>Статистика</b>\n\n🤖 Моделей: ' + TOTAL_MODELS + '\n📈 Запросов: ' + db.stats.total + '\n✅ Успешных: ' + db.stats.success + '\n🟢 Groq: ' + (db.stats.groq || 0) + '\n🟡 HF: ' + (db.stats.hf || 0) + '\n👥 Пользователей: ' + db.users.length);
     } else if (cmd === '/help') {
-        await send(chatId,
-            '📚 <b>Команды</b>\n\n' +
-            '/start — Главное меню\n' +
-            '/site описание — Сайт (1000+ строк)\n' +
-            '/bot описание — Telegram бот (1500+ строк)\n' +
-            '/api описание — REST API (1400+ строк)\n' +
-            '/fix ошибка — Исправить код\n' +
-            '/clear — Очистить историю\n' +
-            '/status — Статистика\n\n' +
-            'Или просто напиши что нужно! 🚀'
-        );
+        await send(chatId, '📚 <b>Команды</b>\n\n/start — Меню\n/site описание — Сайт\n/bot описание — Telegram бот\n/api описание — REST API\n/code задача — Код\n/models — Список моделей\n/status — Статистика\n/clear — Очистить историю\n/auth — Код для сайта\n\nИли просто пиши! 🚀');
     }
 }
 
@@ -871,6 +493,12 @@ async function handleCallback(cb) {
     } else if (data === 'stats') {
         await answer(cb.id);
         await send(chatId, '📊 Запросов: ' + db.stats.total + ' | Успешных: ' + db.stats.success);
+    } else if (data === 'models') {
+        await answer(cb.id);
+        await send(chatId, '🤖 Моделей: ' + TOTAL_MODELS + '\n🟢 Groq: ' + GROQ_MODELS.length + '\n🟡 HF: ' + HUGGINGFACE_MODELS.length);
+    } else if (data === 'clear') {
+        chatHistories.delete(chatId);
+        await answer(cb.id, '🗑️ Очищено!');
     }
 }
 
@@ -878,21 +506,18 @@ async function handleCallback(cb) {
 // ЧАТ
 // ═══════════════════════════════════════════════════════════
 async function handleChat(chatId, text, from) {
-    // Определяем тип запроса
     var lowerText = text.toLowerCase();
     var prompt = text;
     
-    if (lowerText.includes('сайт') || lowerText.includes('лендинг') || lowerText.includes('страниц')) {
+    if (lowerText.indexOf('сайт') !== -1 || lowerText.indexOf('лендинг') !== -1) {
         prompt = SITE_PROMPT(text);
-        await send(chatId, '🎨 Создаю ПОТРЯСАЮЩИЙ сайт...\n⏳ 30-60 секунд');
-    } else if (lowerText.includes('бот') || lowerText.includes('телеграм')) {
+        await send(chatId, '🎨 Создаю сайт...\n⏳ 30-60 сек');
+    } else if (lowerText.indexOf('бот') !== -1 || lowerText.indexOf('телеграм') !== -1) {
         prompt = BOT_PROMPT(text);
-        await send(chatId, '🤖 Создаю ENTERPRISE бота...\n⏳ 30-60 секунд');
-    } else if (lowerText.includes('api') || lowerText.includes('сервер') || lowerText.includes('бэкенд')) {
+        await send(chatId, '🤖 Создаю бота...\n⏳ 30-60 сек');
+    } else if (lowerText.indexOf('api') !== -1 || lowerText.indexOf('бэкенд') !== -1) {
         prompt = API_PROMPT(text);
-        await send(chatId, '⚡ Создаю PRODUCTION API...\n⏳ 30-60 секунд');
-    } else if (lowerText.includes('ошибк') || lowerText.includes('исправ') || lowerText.includes('не работ')) {
-        prompt = FIX_PROMPT(text);
+        await send(chatId, '⚡ Создаю API...\n⏳ 30-60 сек');
     }
     
     await typing(chatId);
@@ -906,11 +531,8 @@ async function handleChat(chatId, text, from) {
         var interval = setInterval(function() { typing(chatId); }, 5000);
         var result = await getAIResponse(history);
         clearInterval(interval);
-        
         history.push({ role: 'assistant', content: result.content });
-        
         await sendLongMessage(chatId, result.content, result.model, result.provider);
-        
         console.log('💬 ' + from.first_name + ': ' + text.substring(0, 30) + '... → ' + result.content.length + ' chars');
     } catch (e) {
         console.error('Chat error:', e);
@@ -922,38 +544,26 @@ async function handleChat(chatId, text, from) {
 // API ENDPOINTS
 // ═══════════════════════════════════════════════════════════
 app.get('/api/health', function(req, res) {
-    res.json({ status: 'ok', models: TOTAL_MODELS, stats: db.stats });
+    res.json({ status: 'ok', models: TOTAL_MODELS, stats: db.stats, users: db.users.length });
+});
+
+app.get('/api/models', function(req, res) {
+    res.json({ groq: GROQ_MODELS, huggingface: HUGGINGFACE_MODELS, total: TOTAL_MODELS });
 });
 
 app.post('/api/auth/verify', function(req, res) {
     var code = req.body.code;
     if (!code || code.length !== 6) return res.status(400).json({ error: 'Неверный код' });
-    
     var data = authCodes.get(code.toUpperCase());
     if (!data) return res.status(401).json({ error: 'Код не найден' });
-    
     authCodes.delete(code.toUpperCase());
     
     var user = null;
     for (var i = 0; i < db.users.length; i++) {
-        if (db.users[i].telegramId === data.telegramId) {
-            user = db.users[i];
-            break;
-        }
+        if (db.users[i].telegramId === data.telegramId) { user = db.users[i]; break; }
     }
-    
     if (!user) {
-        user = {
-            id: 'user_' + data.telegramId,
-            telegramId: data.telegramId,
-            username: data.username,
-            firstName: data.firstName,
-            apiKey: generateApiKey(),
-            plan: 'free',
-            requestsToday: 0,
-            requestsLimit: 1000,
-            createdAt: new Date().toISOString()
-        };
+        user = { id: 'user_' + data.telegramId, telegramId: data.telegramId, username: data.username, firstName: data.firstName, apiKey: generateApiKey(), plan: 'free', requestsToday: 0, requestsLimit: 1000, createdAt: new Date().toISOString() };
         db.users.push(user);
         saveDB();
     }
@@ -964,10 +574,7 @@ app.post('/api/auth/check', function(req, res) {
     var telegramId = req.body.telegramId;
     var user = null;
     for (var i = 0; i < db.users.length; i++) {
-        if (db.users[i].telegramId == telegramId) {
-            user = db.users[i];
-            break;
-        }
+        if (db.users[i].telegramId == telegramId) { user = db.users[i]; break; }
     }
     res.json({ valid: !!user, user: user });
 });
@@ -975,25 +582,346 @@ app.post('/api/auth/check', function(req, res) {
 app.post('/api/v1/chat/completions', async function(req, res) {
     var messages = req.body.messages;
     if (!messages || !messages.length) return res.status(400).json({ error: 'Messages required' });
-    
     try {
         var result = await getAIResponse(messages);
-        res.json({
-            id: 'chatcmpl-' + Date.now(),
-            model: result.model,
-            provider: result.provider,
-            choices: [{ index: 0, message: { role: 'assistant', content: result.content }, finish_reason: 'stop' }]
-        });
-    } catch (e) {
-        res.status(500).json({ error: 'AI error' });
-    }
+        res.json({ id: 'chatcmpl-' + Date.now(), model: result.model, provider: result.provider, choices: [{ index: 0, message: { role: 'assistant', content: result.content }, finish_reason: 'stop' }] });
+    } catch (e) { res.status(500).json({ error: 'AI error' }); }
 });
 
 // ═══════════════════════════════════════════════════════════
-// HTML
+// HTML СТРАНИЦА (ПОЛНАЯ!)
 // ═══════════════════════════════════════════════════════════
+function getHTML() {
+    return '<!DOCTYPE html>\
+<html lang="ru">\
+<head>\
+<meta charset="UTF-8">\
+<meta name="viewport" content="width=device-width,initial-scale=1">\
+<title>NeuroCode AI - ' + TOTAL_MODELS + ' бесплатных AI моделей</title>\
+<meta name="description" content="Бесплатный AI для программистов. Создаём профессиональные сайты, боты, API. ' + TOTAL_MODELS + ' моделей.">\
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">\
+<style>\
+:root{--bg:#0a0a0f;--card:#12121a;--border:#1e1e2e;--text:#e8e8e8;--dim:#6b7280;--purple:#8b5cf6;--pink:#ec4899;--green:#10b981;--yellow:#f59e0b}\
+*{margin:0;padding:0;box-sizing:border-box}\
+body{font-family:"Inter",sans-serif;background:var(--bg);color:var(--text);min-height:100vh}\
+.hidden{display:none!important}\
+button{cursor:pointer;font-family:inherit;border:none;transition:all .2s}\
+input{font-family:inherit;background:rgba(255,255,255,0.05);border:1px solid var(--border);padding:14px;color:#fff;border-radius:12px;font-size:14px;width:100%}\
+input:focus{outline:none;border-color:var(--purple)}\
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(100px);background:var(--card);border:1px solid var(--green);padding:14px 28px;border-radius:12px;opacity:0;transition:.3s;z-index:9999}\
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}\
+.header{position:sticky;top:0;z-index:50;backdrop-filter:blur(20px);background:rgba(10,10,15,0.9);border-bottom:1px solid var(--border)}\
+.header-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 20px}\
+.logo{display:flex;align-items:center;gap:12px;cursor:pointer}\
+.logo-icon{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--purple),var(--pink));display:flex;align-items:center;justify-content:center;font-size:20px}\
+.logo-text{font-size:20px;font-weight:800;background:linear-gradient(135deg,#a78bfa,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}\
+.nav{display:flex;gap:4px}\
+.nav button{padding:10px 16px;border-radius:8px;background:transparent;color:var(--dim);font-size:14px;font-weight:500}\
+.nav button:hover,.nav button.active{background:rgba(139,92,246,0.15);color:#a78bfa}\
+.btn{padding:12px 24px;border-radius:12px;font-weight:600;font-size:14px}\
+.btn-primary{background:linear-gradient(135deg,var(--purple),var(--pink));color:#fff}\
+.btn-primary:hover{opacity:0.9;transform:translateY(-1px)}\
+.user-menu{display:flex;align-items:center;gap:10px;padding:6px 12px;border-radius:10px;background:rgba(255,255,255,0.05);cursor:pointer}\
+.user-avatar{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--pink));display:flex;align-items:center;justify-content:center;font-weight:600}\
+.hero{padding:80px 20px;text-align:center}\
+.hero h1{font-size:clamp(32px,6vw,64px);font-weight:800;line-height:1.1;margin-bottom:24px}\
+.hero h1 span{background:linear-gradient(135deg,#a78bfa,#f472b6);-webkit-background-clip:text;-webkit-text-fill-color:transparent}\
+.hero p{font-size:18px;color:var(--dim);margin-bottom:32px}\
+.hero-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}\
+.hero-buttons .btn{padding:16px 32px;font-size:16px}\
+.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:50px;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);font-size:14px;color:var(--green);margin-bottom:24px}\
+.badge-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}\
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}\
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:1000px;margin:0 auto 60px;padding:0 20px}\
+.feature{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;transition:all .3s}\
+.feature:hover{border-color:var(--purple);transform:translateY(-4px)}\
+.feature h3{font-size:18px;margin-bottom:8px}\
+.feature p{color:var(--dim);font-size:14px}\
+.models-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;max-width:1200px;margin:40px auto;padding:0 20px}\
+.model-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;transition:all .3s}\
+.model-card:hover{border-color:var(--purple);transform:translateY(-3px)}\
+.model-card h3{font-size:15px;margin-bottom:4px}\
+.model-card p{font-size:13px;color:var(--dim)}\
+.model-badge{font-size:10px;padding:3px 8px;border-radius:6px;margin-left:8px}\
+.model-badge.groq{background:rgba(16,185,129,0.2);color:var(--green)}\
+.model-badge.hf{background:rgba(245,158,11,0.2);color:var(--yellow)}\
+.section{padding:40px 20px;max-width:1000px;margin:0 auto}\
+.chat-container{background:var(--card);border-radius:20px;border:1px solid var(--border);overflow:hidden}\
+.chat-header{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px}\
+.chat-status{width:10px;height:10px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}\
+.chat-messages{height:450px;overflow-y:auto;padding:20px}\
+.message{margin-bottom:16px;max-width:85%}\
+.message.user{margin-left:auto}\
+.message.user .msg-content{background:linear-gradient(135deg,var(--purple),var(--pink));border-radius:16px 16px 4px 16px}\
+.message.bot .msg-content{background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:16px 16px 16px 4px}\
+.msg-content{padding:14px 18px;font-size:14px;line-height:1.7}\
+.msg-content pre{background:rgba(0,0,0,0.4);padding:12px;border-radius:8px;margin:10px 0;overflow-x:auto;font-size:13px;position:relative}\
+.msg-content code{font-family:monospace}\
+.copy-btn{position:absolute;top:8px;right:8px;padding:4px 10px;border-radius:4px;background:rgba(255,255,255,0.1);color:#fff;font-size:11px}\
+.copy-btn:hover{background:var(--green)}\
+.typing{display:flex;gap:4px;padding:14px 18px}\
+.typing span{width:8px;height:8px;border-radius:50%;background:var(--purple);animation:bounce .6s infinite}\
+.typing span:nth-child(2){animation-delay:.1s}\
+.typing span:nth-child(3){animation-delay:.2s}\
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}\
+.chat-input{padding:16px;border-top:1px solid var(--border);display:flex;gap:12px}\
+.chat-input button{padding:14px 20px;border-radius:12px}\
+.quick-actions{display:flex;gap:8px;padding:0 20px 16px;flex-wrap:wrap}\
+.quick-btn{padding:10px 16px;border-radius:20px;background:rgba(139,92,246,0.1);color:#a78bfa;font-size:13px}\
+.quick-btn:hover{background:rgba(139,92,246,0.2)}\
+.modal{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;padding:20px}\
+.modal-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.8)}\
+.modal-content{position:relative;width:100%;max-width:400px;background:var(--card);border-radius:20px;border:1px solid var(--border)}\
+.modal-header{padding:20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}\
+.modal-body{padding:20px}\
+.code-input{text-align:center;font-size:28px;letter-spacing:10px;font-weight:700;text-transform:uppercase;background:rgba(255,255,255,0.05)}\
+.profile-dropdown{position:absolute;top:70px;right:20px;width:320px;background:var(--card);border-radius:16px;border:1px solid var(--border);z-index:100}\
+.profile-header{padding:16px;border-bottom:1px solid var(--border);display:flex;gap:12px}\
+.profile-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--purple),var(--pink));display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:600}\
+.progress-bar{height:6px;background:rgba(255,255,255,0.1);border-radius:3px;margin-top:8px}\
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--purple),var(--pink));border-radius:3px}\
+.footer{border-top:1px solid var(--border);padding:40px 20px;text-align:center;color:var(--dim)}\
+.footer a{color:var(--purple);text-decoration:none}\
+@media(max-width:768px){.nav{display:none}.hero h1{font-size:28px}.features{grid-template-columns:1fr}.models-grid{grid-template-columns:1fr}}\
+</style>\
+</head>\
+<body>\
+<div class="toast" id="toast"></div>\
+<div class="modal hidden" id="authModal">\
+<div class="modal-overlay" onclick="closeAuth()"></div>\
+<div class="modal-content">\
+<div class="modal-header"><h2>🔐 Вход</h2><button onclick="closeAuth()" style="background:none;color:var(--dim);font-size:24px">×</button></div>\
+<div class="modal-body">\
+<div style="text-align:center;margin-bottom:20px">\
+<div style="width:70px;height:70px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(135deg,#0088cc,#00aaff);display:flex;align-items:center;justify-content:center;font-size:32px">✈️</div>\
+<p style="color:var(--dim)">Напишите <b style="color:#a78bfa">/auth</b> боту @' + BOT_USERNAME + '</p>\
+</div>\
+<a href="https://t.me/' + BOT_USERNAME + '" target="_blank" style="display:block;text-decoration:none;margin-bottom:16px">\
+<button class="btn btn-primary" style="width:100%;background:linear-gradient(135deg,#0088cc,#00aaff)">✈️ Открыть бота</button>\
+</a>\
+<p style="text-align:center;color:var(--dim);margin-bottom:12px;font-size:14px">Введите код:</p>\
+<input type="text" class="code-input" id="authCode" placeholder="XXXXXX" maxlength="6">\
+<button class="btn btn-primary" style="width:100%;margin-top:12px" onclick="verifyCode()" id="verifyBtn">Войти</button>\
+<p id="authError" style="color:#ef4444;text-align:center;margin-top:10px;font-size:14px"></p>\
+</div>\
+</div>\
+</div>\
+<div class="profile-dropdown hidden" id="profileDropdown">\
+<div class="profile-header">\
+<div class="profile-avatar" id="pAvatar">U</div>\
+<div><h4 id="pName">User</h4><p style="font-size:12px;color:var(--dim)" id="pUsername">@user</p></div>\
+</div>\
+<div style="padding:14px 16px;border-bottom:1px solid var(--border)">\
+<div style="display:flex;justify-content:space-between;font-size:13px"><span style="color:var(--dim)">Запросов</span><span id="pReq">0/1000</span></div>\
+<div class="progress-bar"><div class="progress-fill" id="pProgress" style="width:0%"></div></div>\
+</div>\
+<div style="padding:14px 16px;border-bottom:1px solid var(--border)">\
+<label style="font-size:12px;color:var(--dim)">🔑 API Key</label>\
+<div style="display:flex;gap:8px;margin-top:6px">\
+<code id="pKey" style="flex:1;padding:10px;background:rgba(255,255,255,0.05);border-radius:8px;font-size:10px;overflow:hidden">nc_xxx</code>\
+<button onclick="copyKey()" style="padding:10px;border-radius:8px;background:rgba(255,255,255,0.05);color:#fff;font-size:14px">📋</button>\
+</div>\
+</div>\
+<div style="padding:10px"><button onclick="logout()" style="width:100%;padding:10px;border-radius:8px;background:rgba(239,68,68,0.1);color:#ef4444;font-size:13px">🚪 Выйти</button></div>\
+</div>\
+<header class="header">\
+<div class="header-inner">\
+<div class="logo" onclick="showSection(\'home\')"><div class="logo-icon">⚡</div><div class="logo-text">NeuroCode AI</div></div>\
+<nav class="nav">\
+<button onclick="showSection(\'home\')" class="active" data-section="home">Главная</button>\
+<button onclick="showSection(\'chat\')" data-section="chat">AI Чат</button>\
+<button onclick="showSection(\'api\')" data-section="api">API</button>\
+</nav>\
+<div>\
+<div id="authButtons"><button class="btn btn-primary" onclick="openAuth()">Войти</button></div>\
+<div id="userMenu" class="user-menu hidden" onclick="toggleProfile()"><div class="user-avatar" id="uAvatar">U</div><span id="uName" style="font-size:14px">User</span></div>\
+</div>\
+</div>\
+</header>\
+<section id="home">\
+<div class="hero">\
+<div class="badge"><div class="badge-dot"></div>' + TOTAL_MODELS + ' бесплатных AI моделей</div>\
+<h1>Создаём <span>профессиональные проекты</span></h1>\
+<p>Сайты 1000+ строк, боты 1200+ строк, API 1000+ строк. Бесплатно через Groq и HuggingFace!</p>\
+<div class="hero-buttons">\
+<button class="btn btn-primary" onclick="showSection(\'chat\')">🚀 Начать бесплатно</button>\
+<a href="https://t.me/' + BOT_USERNAME + '" target="_blank" style="text-decoration:none"><button class="btn" style="background:var(--card);border:1px solid var(--border);color:#fff;padding:16px 32px">✈️ Telegram бот</button></a>\
+</div>\
+</div>\
+<div class="features">\
+<div class="feature"><h3>🌐 Сайты</h3><p>1000+ строк кода. Современный дизайн, анимации, адаптивность, SEO. Уровень Awwwards!</p></div>\
+<div class="feature"><h3>🤖 Telegram боты</h3><p>1200+ строк. aiogram 3.x, база данных, админка, FSM, клавиатуры. Enterprise уровень!</p></div>\
+<div class="feature"><h3>⚡ REST API</h3><p>1000+ строк. JWT авторизация, CRUD, валидация, Swagger. Production ready!</p></div>\
+</div>\
+<h2 style="text-align:center;margin-bottom:20px">🤖 AI Модели</h2>\
+<div class="models-grid" id="modelsGrid"></div>\
+</section>\
+<section id="chat" class="section hidden">\
+<div class="chat-container">\
+<div class="chat-header"><div class="chat-status"></div><span style="font-weight:600">NeuroCode AI</span><span style="color:var(--dim);margin-left:auto;font-size:13px">• ' + TOTAL_MODELS + ' моделей • Онлайн</span></div>\
+<div class="chat-messages" id="chatMessages">\
+<div class="message bot"><div class="msg-content">👋 <b>Привет!</b> Я NeuroCode AI - создаю профессиональные проекты!<br><br>🌐 <b>Сайты</b> — 1000+ строк<br>🤖 <b>Боты</b> — 1200+ строк<br>⚡ <b>API</b> — 1000+ строк<br><br>Просто напиши что нужно! 🚀</div></div>\
+</div>\
+<div class="quick-actions">\
+<button class="quick-btn" onclick="sendQuick(\'Создай лендинг для IT стартапа\')">🌐 Сайт</button>\
+<button class="quick-btn" onclick="sendQuick(\'Создай Telegram бота магазин с корзиной\')">🤖 Бот</button>\
+<button class="quick-btn" onclick="sendQuick(\'Создай REST API для блога\')">⚡ API</button>\
+<button class="quick-btn" onclick="sendQuick(\'Напиши парсер сайтов на Python\')">🕷️ Парсер</button>\
+</div>\
+<div class="chat-input">\
+<input type="text" id="chatInput" placeholder="Опишите проект..." onkeydown="if(event.key===\'Enter\')sendMessage()">\
+<button class="btn btn-primary" onclick="sendMessage()">➤</button>\
+</div>\
+</div>\
+</section>\
+<section id="api" class="section hidden">\
+<h2 style="margin-bottom:12px">📖 API Документация</h2>\
+<p style="color:var(--dim);margin-bottom:24px">OpenAI-совместимый API • ' + TOTAL_MODELS + ' моделей</p>\
+<pre style="background:var(--card);padding:20px;border-radius:12px;overflow-x:auto;border:1px solid var(--border)"><code style="color:var(--green)">curl -X POST ' + DOMAIN + '/api/v1/chat/completions \\\n  -H "Content-Type: application/json" \\\n  -d \'{"messages":[{"role":"user","content":"Привет"}]}\'</code></pre>\
+<p style="margin-top:20px;color:var(--dim)">🔑 Получите API ключ через /auth в боте @' + BOT_USERNAME + '</p>\
+</section>\
+<footer class="footer">\
+<p>© 2025 NeuroCode AI — ' + TOTAL_MODELS + ' бесплатных моделей</p>\
+<p style="margin-top:8px"><a href="https://t.me/' + BOT_USERNAME + '">Telegram бот</a></p>\
+</footer>\
+<script>\
+var GROQ = ' + JSON.stringify(GROQ_MODELS) + ';\
+var HF = ' + JSON.stringify(HUGGINGFACE_MODELS) + ';\
+var user = null;\
+var chatHistory = [];\
+function $(id) { return document.getElementById(id); }\
+function toast(m) { var t = $(\'toast\'); t.textContent = m; t.classList.add(\'show\'); setTimeout(function() { t.classList.remove(\'show\'); }, 3000); }\
+function renderModels() {\
+    var all = GROQ.map(function(m) { return {name: m.name, description: m.description, prov: \'groq\'}; }).concat(HF.map(function(m) { return {name: m.name, description: m.description, prov: \'hf\'}; }));\
+    $(\'modelsGrid\').innerHTML = all.map(function(m) {\
+        return \'<div class="model-card"><h3>\' + m.name + \'<span class="model-badge \' + m.prov + \'">\' + (m.prov === \'groq\' ? \'🟢 Groq\' : \'🟡 HF\') + \'</span></h3><p>\' + m.description + \'</p></div>\';\
+    }).join(\'\');\
+}\
+function openAuth() { $(\'authModal\').classList.remove(\'hidden\'); $(\'authCode\').focus(); }\
+function closeAuth() { $(\'authModal\').classList.add(\'hidden\'); $(\'authCode\').value = \'\'; $(\'authError\').textContent = \'\'; }\
+function verifyCode() {\
+    var code = $(\'authCode\').value.trim().toUpperCase();\
+    if (code.length !== 6) { $(\'authError\').textContent = \'Введите 6 символов\'; return; }\
+    $(\'verifyBtn\').disabled = true;\
+    $(\'verifyBtn\').textContent = \'Проверка...\';\
+    fetch(\'/api/auth/verify\', { method: \'POST\', headers: {\'Content-Type\':\'application/json\'}, body: JSON.stringify({code:code}) })\
+        .then(function(r) { return r.json().then(function(d) { return {ok: r.ok, data: d}; }); })\
+        .then(function(res) {\
+            if (!res.ok) { $(\'authError\').textContent = res.data.error; return; }\
+            user = res.data;\
+            localStorage.setItem(\'user\', JSON.stringify(user));\
+            closeAuth();\
+            updateUI();\
+            toast(\'✅ Добро пожаловать!\');\
+        })\
+        .catch(function() { $(\'authError\').textContent = \'Ошибка сети\'; })\
+        .finally(function() { $(\'verifyBtn\').disabled = false; $(\'verifyBtn\').textContent = \'Войти\'; });\
+}\
+function updateUI() {\
+    if (user) {\
+        $(\'authButtons\').classList.add(\'hidden\');\
+        $(\'userMenu\').classList.remove(\'hidden\');\
+        $(\'uName\').textContent = user.firstName;\
+        $(\'uAvatar\').textContent = user.firstName.charAt(0);\
+        $(\'pName\').textContent = user.firstName;\
+        $(\'pUsername\').textContent = \'@\' + user.username;\
+        $(\'pAvatar\').textContent = user.firstName.charAt(0);\
+        $(\'pReq\').textContent = user.requestsToday + \'/\' + user.requestsLimit;\
+        $(\'pProgress\').style.width = (user.requestsToday / user.requestsLimit * 100) + \'%\';\
+        $(\'pKey\').textContent = user.apiKey.substring(0, 12) + \'...\';\
+    } else {\
+        $(\'authButtons\').classList.remove(\'hidden\');\
+        $(\'userMenu\').classList.add(\'hidden\');\
+    }\
+}\
+function toggleProfile() { $(\'profileDropdown\').classList.toggle(\'hidden\'); }\
+function copyKey() { if (user) { navigator.clipboard.writeText(user.apiKey); toast(\'✅ Скопировано!\'); } }\
+function logout() { user = null; localStorage.removeItem(\'user\'); updateUI(); $(\'profileDropdown\').classList.add(\'hidden\'); }\
+function showSection(name) {\
+    document.querySelectorAll(\'section\').forEach(function(s) { s.classList.add(\'hidden\'); });\
+    $(name).classList.remove(\'hidden\');\
+    document.querySelectorAll(\'.nav button\').forEach(function(b) { b.classList.remove(\'active\'); });\
+    var btn = document.querySelector(\'.nav button[data-section="\' + name + \'"]\');\
+    if (btn) btn.classList.add(\'active\');\
+    window.scrollTo(0, 0);\
+}\
+function escapeHtml(text) { var div = document.createElement(\'div\'); div.textContent = text; return div.innerHTML; }\
+function formatMessage(text) {\
+    text = text.replace(/```(\\w*)\\n([\\s\\S]*?)```/g, function(m, lang, code) {\
+        return \'<pre><code>\' + escapeHtml(code.trim()) + \'</code><button class="copy-btn" onclick="copyCode(this)">📋</button></pre>\';\
+    });\
+    text = text.replace(/`([^`]+)`/g, \'<code style="background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px">$1</code>\');\
+    text = text.replace(/\\*\\*([^*]+)\\*\\*/g, \'<b>$1</b>\');\
+    text = text.replace(/\\*([^*]+)\\*/g, \'<i>$1</i>\');\
+    text = text.replace(/\\n/g, \'<br>\');\
+    return text;\
+}\
+function copyCode(btn) {\
+    var code = btn.parentElement.querySelector(\'code\').textContent;\
+    navigator.clipboard.writeText(code);\
+    btn.textContent = \'✅\';\
+    setTimeout(function() { btn.textContent = \'📋\'; }, 2000);\
+}\
+function sendMessage() {\
+    var input = $(\'chatInput\');\
+    var msg = input.value.trim();\
+    if (!msg) return;\
+    input.value = \'\';\
+    var messages = $(\'chatMessages\');\
+    messages.innerHTML += \'<div class="message user"><div class="msg-content">\' + escapeHtml(msg) + \'</div></div>\';\
+    messages.innerHTML += \'<div class="message bot" id="typing"><div class="msg-content"><div class="typing"><span></span><span></span><span></span></div></div></div>\';\
+    messages.scrollTop = messages.scrollHeight;\
+    chatHistory.push({role:\'user\',content:msg});\
+    if (chatHistory.length > 10) chatHistory = chatHistory.slice(-10);\
+    fetch(\'/api/v1/chat/completions\', {\
+        method: \'POST\',\
+        headers: {\'Content-Type\':\'application/json\'},\
+        body: JSON.stringify({messages:chatHistory})\
+    })\
+    .then(function(r) { return r.json(); })\
+    .then(function(d) {\
+        var content = d.choices && d.choices[0] && d.choices[0].message ? d.choices[0].message.content : \'Ошибка\';\
+        chatHistory.push({role:\'assistant\',content:content});\
+        var formatted = formatMessage(content);\
+        $(\'typing\').outerHTML = \'<div class="message bot"><div class="msg-content">\' + formatted + \'<div style="font-size:11px;color:var(--dim);margin-top:10px">🤖 \' + d.provider + \': \' + d.model + \'</div></div></div>\';\
+        messages.scrollTop = messages.scrollHeight;\
+    })\
+    .catch(function() {\
+        $(\'typing\').outerHTML = \'<div class="message bot"><div class="msg-content">❌ Ошибка. Попробуйте ещё раз.</div></div>\';\
+    });\
+}\
+function sendQuick(msg) { $(\'chatInput\').value = msg; sendMessage(); }\
+(function() {\
+    renderModels();\
+    var saved = localStorage.getItem(\'user\');\
+    if (saved) {\
+        try {\
+            var u = JSON.parse(saved);\
+            fetch(\'/api/auth/check\', { method: \'POST\', headers: {\'Content-Type\':\'application/json\'}, body: JSON.stringify({telegramId: u.telegramId}) })\
+                .then(function(r) { return r.json(); })\
+                .then(function(d) {\
+                    if (d.valid) { user = d.user; localStorage.setItem(\'user\', JSON.stringify(user)); updateUI(); }\
+                    else { localStorage.removeItem(\'user\'); }\
+                })\
+                .catch(function() { localStorage.removeItem(\'user\'); });\
+        } catch(e) { localStorage.removeItem(\'user\'); }\
+    }\
+    document.addEventListener(\'click\', function(e) {\
+        if (!e.target.closest(\'#userMenu\') && !e.target.closest(\'#profileDropdown\')) {\
+            $(\'profileDropdown\').classList.add(\'hidden\');\
+        }\
+    });\
+    $(\'authCode\').addEventListener(\'input\', function() {\
+        this.value = this.value.toUpperCase().replace(/[^A-Z0-9]/g, \'\');\
+    });\
+})();\
+</script>\
+</body>\
+</html>';
+}
+
 app.get('/', function(req, res) {
-    res.send('<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NeuroCode AI</title><style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui,sans-serif;background:#0a0a0f;color:#e8e8e8;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}.container{max-width:600px;text-align:center}h1{font-size:48px;margin-bottom:16px;background:linear-gradient(135deg,#8b5cf6,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent}p{color:#6b7280;margin-bottom:24px;font-size:18px;line-height:1.6}.btn{display:inline-block;padding:16px 32px;background:linear-gradient(135deg,#8b5cf6,#ec4899);color:#fff;text-decoration:none;border-radius:12px;font-weight:600;font-size:16px;margin:8px;transition:all .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 40px rgba(139,92,246,0.3)}.stats{margin-top:40px;display:flex;justify-content:center;gap:40px;flex-wrap:wrap}.stat{text-align:center}.stat-value{font-size:36px;font-weight:800;background:linear-gradient(135deg,#8b5cf6,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.stat-label{color:#6b7280;font-size:14px;margin-top:4px}</style></head><body><div class="container"><h1>⚡ NeuroCode AI</h1><p>Создаю ШЕДЕВРЫ кода: сайты 1000+ строк, боты 1500+ строк, API 1400+ строк. ' + TOTAL_MODELS + ' AI моделей бесплатно!</p><a href="https://t.me/' + BOT_USERNAME + '" class="btn">🤖 Открыть бота</a><div class="stats"><div class="stat"><div class="stat-value">' + TOTAL_MODELS + '</div><div class="stat-label">AI моделей</div></div><div class="stat"><div class="stat-value">' + db.stats.success + '</div><div class="stat-label">Проектов создано</div></div></div></div></body></html>');
+    res.send(getHTML());
 });
 
 // ═══════════════════════════════════════════════════════════
@@ -1001,11 +929,11 @@ app.get('/', function(req, res) {
 // ═══════════════════════════════════════════════════════════
 app.listen(PORT, async function() {
     console.log('═══════════════════════════════════════════════════════════');
-    console.log('🚀 NeuroCode AI v4.0 — MEGA EDITION');
+    console.log('🚀 NeuroCode AI v4.0 — FULL EDITION');
     console.log('═══════════════════════════════════════════════════════════');
     console.log('🌐 ' + DOMAIN);
     console.log('🤖 ' + TOTAL_MODELS + ' AI моделей');
-    console.log('💎 Сайты: 1000+ строк | Боты: 1500+ строк | API: 1400+ строк');
+    console.log('💎 Сайты: 1000+ | Боты: 1200+ | API: 1000+ строк');
     console.log('═══════════════════════════════════════════════════════════');
     
     try {
