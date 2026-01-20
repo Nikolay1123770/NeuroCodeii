@@ -14,8 +14,8 @@ const BOT_USERNAME = 'NeuroCodeAI_bot';
 // ═══════════════════════════════════════════════════════════
 // API КЛЮЧИ
 // ═══════════════════════════════════════════════════════════
-const GROQ_API_KEY = process.env.GROQ_API_KEY || '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';
-const HUGGINGFACE_TOKEN = process.env.HUGGINGFACE_TOKEN || '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';
+const GROQ_API_KEY = process.env.GROQ_API_KEY || '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';
+const HUGGINGFACE_TOKEN = process.env.HUGGINGFACE_TOKEN || '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';
 
 // ═══════════════════════════════════════════════════════════
 // 🔥 МЕГА ПРОМПТ ДЛЯ ГЕНИАЛЬНЫХ ПРОЕКТОВ
