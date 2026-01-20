@@ -15,7 +15,7 @@ const BOT_USERNAME = 'Seemsadow_bot';
 // API КЛЮЧИ
 // ═══════════════════════════════════════════════════════════
 const GROQ_API_KEY = process.env.GROQ_API_KEY || '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';
-const HUGGINGFACE_TOKEN = process.env.HUGGINGFACE_TOKEN || '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';
+const HUGGINGFACE_TOKEN = process.env.HUGGINGFACE_TOKEN || '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';
 
 // ═══════════════════════════════════════════════════════════
 // 🔥 МОЩНЕЙШИЙ СИСТЕМНЫЙ ПРОМПТ
