@@ -15,7 +15,7 @@ const BOT_USERNAME = 'NeuroCodeAI_bot';
 // ═══════════════════════════════════════════════════════════
 // API КЛЮЧИ
 // ═══════════════════════════════════════════════════════════
-const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || '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';
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY || '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';
 const HUGGINGFACE_TOKEN = process.env.HUGGINGFACE_TOKEN || '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';
 
 // ═══════════════════════════════════════════════════════════
