@@ -9,7 +9,7 @@ const BOT_TOKEN = process.env.BOT_TOKEN || '8495248952:AAE1XVNscAT7r9HfYHDebTq-4
 const PORT = process.env.PORT || 9999;
 const DOMAIN = process.env.DOMAIN || 'https://neurocodeai.bothost.ru';
 const WEBHOOK_PATH = `/webhook/${BOT_TOKEN}`;
-const BOT_USERNAME = 'NeuroCodeAI_bot';
+const BOT_USERNAME = 'Seemsadow_bot';
 
 // ═══════════════════════════════════════════════════════════
 // API КЛЮЧИ
